@@ -1,0 +1,12 @@
+[
+    {
+        "title": "My First Lesson",
+        "body": "Here are some various notes about my first lesson",
+        "UserId": 1
+    },
+    {
+        "title": "Notes about my first student",
+        "body": "Could be better if they didn't fail high school english",
+        "UserId":2
+    }
+]
