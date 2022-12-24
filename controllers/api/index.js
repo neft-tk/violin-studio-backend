@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const userRoutes = require('./userRoutes');
-const noteRoutes = require('./noteRoutes');
-const eventRoutes = require('./eventRoutes');
+const userRoutes = require('./userController');
+const noteRoutes = require('./noteController');
+const eventRoutes = require('./eventController');
 
 router.use('/users', userRoutes);
 router.use('/notes', noteRoutes);

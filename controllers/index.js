@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const apiRoutes = require('./api');
-const frontEndRoutes = require("./frontEndRoutes")
+const frontEndRoutes = require("./frontEndController")
 
 router.use('/api', apiRoutes);
 router.use( frontEndRoutes);
