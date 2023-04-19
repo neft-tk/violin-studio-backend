@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const router = require("express").Router();
-const { User, Note } = require("../../models");
+const { User, Note } = require("../models");
 
 async function getUsers(req, res) {
   try {
@@ -87,5 +87,6 @@ async function readToken(req, res) {
 module.exports = {
   getUsers,
   getSingleUser,
+  postUserLogin,
   readToken,
 };
