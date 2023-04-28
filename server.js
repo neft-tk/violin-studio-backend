@@ -2,6 +2,7 @@
 const express = require('express');
 const session = require('express-session');
 const http = require('http');
+const cors = require('cors')
 const routes = require('./routes');
 const exphbs = require('express-handlebars');
 const sequelize = require('./config/connection');
@@ -9,6 +10,9 @@ const sequelize = require('./config/connection');
 // Initialize some stuff
 const app = express();
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+// Use cors for cross origin requests
+app.use(cors());
 
 // Declare a port.
 const PORT = process.env.PORT || 3001;
