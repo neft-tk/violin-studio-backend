@@ -56,7 +56,7 @@ async function postUserLogin(req, res) {
         {
           id: foundUser.id,
           email: foundUser.email,
-          name: foundUser.username,
+          name: foundUser.name,
         },
         process.env.JWT_SECRET,
         {
